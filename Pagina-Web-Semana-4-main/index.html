@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Práctica semana 4</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h3 class="eventos">Eventos Click</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm ejemplos">
+            Toma una galleta :D
+            <div>
+                <button type="button" class="boton" id="galleta">
+                    <img src="Media/galleta.png" width="50px" height="50px">
+                </button>
+                <div>
+                    <label id="n_clicks_galleta"></label>
+                </div>                
+            </div>
+          </div>
+          <div class="col-sm ejemplos" id="multicolor">
+            <label>Cambiemos los colores</label>
+            <div>
+                <button type="button" class="boton" id="cambia_colores">!Sorprendete!</button>
+            </div>
+            <label id="hexadecimal"></label>
+          </div>
+          <div class="col-sm ejemplos">
+            <label>¿...?</label>
+            <div>
+                <button type="button"  class="boton" id="barra_metal">
+                    <img src="Media/barra_metal.jpg" width="50px" height="50px">
+                    <audio id="sonido_barra_metal" src="Media/audio_barra_metal.mp3"></audio>
+                </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+            <h3 class="eventos">Eventos Focus</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm ejemplos">
+            <label>Correo:</label>
+            <input  id="input1" placeholder="Debe contener un '@'">
+          </div>
+          <div class="col-sm ejemplos">
+            <label>Correo universitario:</label>
+            <input  id="input2" placeholder="Debe contener '@ugb.edu.sv'">
+            <label id="correo_invalido"></label>
+          </div>
+          <div class="col-sm ejemplos twitterbox">
+            Twitter
+            <div>
+                <textarea id="twitter"></textarea>
+            </div>
+            <label id="num_caracteres">Caracteres restantes: </label>
+          </div>
+        </div>
+
+        <div class="row">
+            <h3 class="eventos">Eventos Mouseover</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm ejemplos">
+            <label> Ingrese su nombre:</label>
+            <input id="Un nombre y un apellido" placeholder="Que vayan mayusculas">
+            <script> 
+              
+              document.getElementById('Un nombre y un apellido').addEventListener('mouseover', function() {
+                  document.getElementById('Un nombre y un apellido').style.backgroundColor = '#3498db';
+              });
+          
+              
+              document.getElementById('Un nombre y un apellido').addEventListener('mouseout', function() {
+                  document.getElementById('Un nombre y un apellido').style.backgroundColor = '';
+              });
+          </script>
+          </div>
+          <div class="col-sm ejemplos">
+            <label> Ingrese su edad:</label>
+            <input id="miEdadInput" placeholder="Escriba en números">
+            <script>
+                document.getElementById('miEdadInput').addEventListener('mouseover', function() {
+                    document.getElementById('miEdadInput').style.backgroundColor = '#e74c3c';
+                });
+        
+                document.getElementById('miEdadInput').addEventListener('mouseout', function() {
+                    document.getElementById('miEdadInput').style.backgroundColor = '';
+                });
+            </script>
+        </div>
+        
+        <div class="col-sm ejemplos">
+          <label>Escribe una frase que te guste:</label>
+          <input id="miInputFrase" placeholder="Escribe aquí">
+          <script>
+              document.getElementById('miInputFrase').addEventListener('mouseover', function() {
+                  document.getElementById('miInputFrase').style.backgroundColor = '#00FF00';
+              });
+      
+              document.getElementById('miInputFrase').addEventListener('mouseout', function() {
+                  document.getElementById('miInputFrase').style.backgroundColor = '';
+              });
+          </script>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer>
+    <h5>INTEGRANTES: </h5>
+    <div>
+        <ul>
+            <li>Carlos Eduardo Mejía Luna: SMSS061022</li>
+            <li>Fredy Alexander Funes Ortiz: SMSS034922</li>
+        </ul>
+    </div>
+
+</footer>
+</html>

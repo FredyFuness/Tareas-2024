@@ -1,0 +1,38 @@
+.ejemplos{
+    background-color: darkorange;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.eventos{
+    text-align: center;
+}
+
+footer{
+    background-color:cadetblue;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+#input2{
+    width: 100%;
+}
+
+#correo_invalido{
+    color: red;
+    border-color: red;
+}
+
+#twitter{
+    width: 100%;
+}
+
+.twitterbox{
+    background-color:cornflowerblue;
+}

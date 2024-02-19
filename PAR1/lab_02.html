@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerardo Barrios</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .title {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px; /* Añade espacio debajo del título */
+        }
+
+        .box {
+            border-radius: 0.25rem;
+            margin: 10px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            max-width: 300px;
+            position: relative; /* Añadido */
+        }
+
+        .box img {
+            max-width: 100%;
+            height: 200px; /* Establece una altura específica para las imágenes */
+            object-fit: cover;
+            border: 3px solid black;
+        }
+
+        .button-container {
+            text-align: center; /* Centra el contenido horizontalmente */
+            position: relative; /* Añadido */
+        }
+
+        .interaction-message {
+            position: absolute;
+            top: -20px; /* Ajusta según sea necesario */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Ajusta el tamaño del botón */
+        .button-container button {
+            width: 80px; /* Ancho deseado del botón */
+            height: auto; /* Altura automática para mantener la proporción */
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Gerardo Barrios</h1>
+    </div>
+    <table align="center">
+        <tr>
+            <td class="box vertical-box" id="box1" tabindex="0">
+                <img src="Post Publicacion de Instagram Título carrousel Tips Marketing infantil (1).png" alt="ejemplo 1">
+                <p class="interaction-message">Estás interactuando</p> <!-- Nuevo -->
+            </td>
+            <td class="box" id="box4">
+                <img src="250px-GBarrios.jpg" alt="ejemplo 4">
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" class="button-container">
+                <button id="box7" tabindex="0"><img src="pikachu.jpg" alt="imagen de botón" style="max-width: 60px;"></button> <!-- Modificado -->
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <p> Fredy Alexander Funes Ortiz SMSS034922 </p> <!-- es el pie de página -->
+        <p> David Ademir Ramos Lovos SMSS014022 </p> 
+    </footer>
+
+    <script src="lab_02.js"></script>
+</body>
+</html>
+<!-- ¿Utilizaron estilos de boostrap o personalizados? ¿Porqué decidieron hacerlo
+de esta forma?
+No, porque no lo vimos de forma necesario, sin embargo, pensamos en usarlo.
+¿De qué manera utilizaron los listeners? Descríbanlos a continuación.
+Cuando hacemos click en la imagen del Capitan Gerardo Barrios.
+¿Qué otro tipo de listeners creen que pueden agregar a su página y de qué
+manera lo implementarían?
+Evento Scroll: 
+Puedes usar eventos de scroll para realizar acciones cuando el usuario realiza desplazamiento en la página.-->

@@ -1,0 +1,27 @@
+table {
+
+    width: 100%;
+}
+
+td {
+    border: 100px solid black;
+    padding: 100px;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 200%; /* Ajusta el ancho máximo del contenedor según sea necesario */
+    text-align: center;
+    font-size: 9px; /* Ajusta el tamaño del texto según sea necesario */
+}
